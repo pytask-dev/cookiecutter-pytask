@@ -37,7 +37,7 @@ repos:
     -   id: python-use-type-annotations
     -   id: text-unicode-replacement-char
 -   repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.8.4
+    rev: v0.9.6
     hooks:
       - id: ruff
         args: [--config, pyproject.toml, hooks, tests]
@@ -45,7 +45,7 @@ repos:
       - id: ruff-format
         args: [--config, pyproject.toml]
 -   repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.21
+    rev: 0.7.22
     hooks:
     -   id: mdformat
         additional_dependencies: [
@@ -59,7 +59,7 @@ repos:
               {{cookiecutter.project_slug}}/README.md
           )$
 -   repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.21
+    rev: 0.7.22
     hooks:
     -   id: mdformat
         additional_dependencies: [
@@ -69,7 +69,7 @@ repos:
         args: [--wrap, "88"]
         files: (docs/.)
 -   repo: https://github.com/crate-ci/typos
-    rev: v1.28.4
+    rev: typos-dict-v0.12.4
     hooks:
       - id: typos
 -   repo: meta
